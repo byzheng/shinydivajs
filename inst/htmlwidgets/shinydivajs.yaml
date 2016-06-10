@@ -1,0 +1,8 @@
+dependencies:
+  - name: shinydivajs
+    version: 4.1.0
+    src: htmlwidgets/lib/diva.js-4.1.0
+    script: 
+      - js/diva.min.js
+    stylesheet: 
+      - css/diva.min.css

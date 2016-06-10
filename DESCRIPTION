@@ -1,0 +1,10 @@
+Package: shinydivajs
+Maintainer: Bangyou Zheng <Bangyou.Zheng@csiro.au>
+License: MIT
+Title: Shiny Diva.js
+Type: Package
+Author: Bangyou Zheng
+Description: A Shiny wrapper for diva.js
+Version: 0.1.0.0
+Date: 2016-03-05
+RoxygenNote: 5.0.1
