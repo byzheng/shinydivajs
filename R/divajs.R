@@ -10,8 +10,6 @@
 #' 
 #' @param iipServerURL The URL to the IIPImage installation
 #' @param objectData URL to the JSON file that provides the object dimension data
-#' @param imageDir The absolute path of the directory that contains the 
-#' images on the IIP Image Server
 #' @param inGrid enableAutoTitle
 #' @param enableAutoTitle Shows the title within a div of id diva-title
 #' @param enableFullscreen Enable or disable fullscreen icon (mode still available)
@@ -22,9 +20,8 @@
 #' @return Interactive dygraph plot
 #' @import htmlwidgets
 #' @export
-shinydivajs <- function(iipServerURL,
+shinydivajs <- function(
                   objectData,
-                  imageDir,
                   inGrid = FALSE,
                   enableAutoTitle = TRUE,
                   enableFullscreen = TRUE,
@@ -33,9 +30,7 @@ shinydivajs <- function(iipServerURL,
     
     # pass the data and settings using 'x'
     x <- list(
-        iipServerURL = iipServerURL,
         objectData = objectData,
-        imageDir = imageDir,
         inGrid = inGrid,
         enableAutoTitle = enableAutoTitle,
         enableFullscreen = enableFullscreen,

@@ -1,7 +1,12 @@
 dependencies:
+  - name: jquery
+    version: 2.1.4
+    src: htmlwidgets/lib/jquery-2.1.4
+    script: 
+      - jquery.min.js
   - name: shinydivajs
-    version: 4.1.0
-    src: htmlwidgets/lib/diva.js-4.1.0
+    version: 5.0.0
+    src: htmlwidgets/lib/diva.js-5.0.0
     script: 
       - js/diva.min.js
     stylesheet: 

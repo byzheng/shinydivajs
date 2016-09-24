@@ -16,19 +16,21 @@ HTMLWidgets.widget({
     
     return {
       renderValue: function(x) {
-          $(el).diva({
-				iipServerURL: x.iipServerURL,
+          var diva = $(el).data('diva');
+          if (typeof diva === "undefined") {
+            $(el).diva({
 				objectData: x.objectData,
-				imageDir: x.imageDir,
 				inGrid: x.inGrid,
 				enableAutoTitle: x.enableAutoTitle,
 				enableFullscreen: x.enableFullscreen,
 				enableLinkIcon: x.enableLinkIcon,
 				enableCanvas: false,
                 enableDownload: false,
-                enableAutoHeight: true,
+                enableAutoHeight: true
 			});
-        
+          } else {
+              diva.changeObject(x.objectData);
+          }
       }
     };
   }

@@ -4,17 +4,12 @@
 \alias{shinydivajs}
 \title{a JavaScript book image viewer}
 \usage{
-shinydivajs(iipServerURL, objectData, imageDir, inGrid = FALSE,
-  enableAutoTitle = TRUE, enableFullscreen = TRUE, enableLinkIcon = TRUE,
-  width = NULL, height = NULL)
+shinydivajs(objectData, inGrid = FALSE, enableAutoTitle = TRUE,
+  enableFullscreen = TRUE, enableLinkIcon = TRUE, width = NULL,
+  height = NULL)
 }
 \arguments{
-\item{iipServerURL}{The URL to the IIPImage installation}
-
 \item{objectData}{URL to the JSON file that provides the object dimension data}
-
-\item{imageDir}{The absolute path of the directory that contains the 
-images on the IIP Image Server}
 
 \item{inGrid}{enableAutoTitle}
 
@@ -27,6 +22,8 @@ images on the IIP Image Server}
 \item{width}{Width in pixels (optional, defaults to automatic sizing)}
 
 \item{height}{Height in pixels (optional, defaults to automatic sizing)}
+
+\item{iipServerURL}{The URL to the IIPImage installation}
 }
 \value{
 Interactive dygraph plot
